@@ -1,0 +1,13 @@
+blockdiag {
+  // Define class (list of attributes)
+  class emphasis [color = lightblue, style = dashed];
+  class redline [color = red, style = dotted];
+
+  object1 -> Transform -> Load -> object2 -> Transform2 -> Load2;
+
+  // Set class to node
+  Transform [class = "emphasis"];
+
+  // Set class to edge
+  Transform -> Load [class = "redline"];
+}
